@@ -29,13 +29,6 @@ const handleClick = (element) => {
 
 
 
-
-
-
-
-
-
-
 // this function places the "currentMarker" inside the HTML element that was clicked and calls the "changeMarker" function.
 const addMarker = (id) => {
 
@@ -51,16 +44,12 @@ const addMarker = (id) => {
   // document
   // .innerHTML 
 
+  //put the value of currentMarker value into the selected html element
+
+  document.getElementById(id).innerHTML = currentMarker
+
   changeMarker()
 }
-
-
-
-
-
-
-
-
 
 
 // This "changeMarker" function changes "X" to "O" in the "currentMarker" variable or "O" to "X"
@@ -73,14 +62,6 @@ const changeMarker = () => {
 }
 
 
-
-
-
-
-
-
-
-
 // This "resetBoard" function is called when the user clicks on the "Restart" button.
 const resetBoard = () => {
   
@@ -88,11 +69,13 @@ const resetBoard = () => {
       // collects all of the "td" elements into an HTML Collection: https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp  
     
   // @TODO-3.5: MIX & MATCH, You will need the following pieces of code to build that line:
-  // squares
-  // .getElementsByTagName("TD")
-  // =
-  // document
-  // const
+  // -- squares
+  // -- .getElementsByTagName("TD")
+  // -- =
+  // -- document
+  // -- const
+
+  const squares = document.getElementsByTagName("td");
   
   // loops over the HTML Collection of TDs and clears out the Xs and Os
   for (i=0; i < squares.length; i++) {

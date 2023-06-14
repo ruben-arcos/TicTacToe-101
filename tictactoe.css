@@ -1,6 +1,29 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  width: 500px;
+  height: 500px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+button {
+  margin: 0 auto;
+}
+
 .jumbotron {
-  margin: 5% auto;
-  margin-left: 43%;
+  margin: 0 auto;
+  margin-left: 0 auto;
+  text-align: center;
 }
 
 td {
@@ -14,3 +37,6 @@ td {
 table {
   margin: auto auto;
 }
+
+
+
